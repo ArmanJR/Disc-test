@@ -1,0 +1,31 @@
+body{
+    /* direction: rtl; */
+}
+main{
+    direction: rtl;
+    text-align: right;
+}
+tr{
+    max-height: 50px;
+}
+td{
+    text-align: center;
+    font-size: 15px;
+}
+th div{
+    height: 100%;
+    max-height: 100%;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
