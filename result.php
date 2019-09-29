@@ -382,7 +382,7 @@ var dDone, iDone, sDone, cDone = 0;
 $("#graph3 td:nth-child(2)").filter(function(){
     if($(this).text() == '<?php echo $dDiffSigned;?>'){
         dDone = 1;
-        alert($(this).parent("td:nth-child(1)").text());
+        //alert($(this).parent("td:nth-child(1)").text());
     }
     return $(this).text() == '<?php echo $dDiffSigned;?>';
 }).css( "background-color", "yellow" );
@@ -437,6 +437,13 @@ if(!cDone){
     $("#bottom-row td:nth-child(5)").text('<?php echo $cDiffSigned;?>');
     <?php } ?>
 }
+
+$('#graph3 td').filter(function() {
+    return ( $(this).css('background-color') == 'yellow' );
+}).each(function(){
+    console.log("s");
+});
+
 </script>
 </body>
 </html>
